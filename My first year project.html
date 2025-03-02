@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #aea2a2;
+            color: #333;
+            transition: 0.5s;
+        }
+        header {
+            background: #6792bf;
+            color: rgb(6, 6, 6);
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #0056b3;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        .dark-mode {
+            background-color: #222;
+            color: white;
+        }
+        button {
+            padding: 10px;
+            margin: 20px;
+            border: none;
+            cursor: pointer;
+            background: #007BFF;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0056b3;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Senam's Personal Website</h1>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#program">My Program</a>
+        <a href="#motivation">Why This Program</a>
+        <a href="#contact">Contact</a>
+    </nav>
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Senam Gbedema. I come from the Volta Region of Ghana and currently live in Kumasi in the Ashanti Region. My interests include programming, mathematics, and chess. I am pursuing a BSc in Computer Engineering at Kwame Nkrumah University of Science and Technology (KNUST), Ghana. </p>
+        <img src="mypicture.jpg" width="300" height="380"> 
+    </section>
+    <section id="program">
+        <h2>My Program</h2>
+        <p>I am currently studying for a Bachelor of Science in Computer Engineering at Kwame Nkrumah University of Science and Technology (KNUST). This program combines computer science and electrical engineering, enabling me to develop innovative hardware and software solutions.</p>
+        <p>This 4-year program equips me with skills in Programming & Software Development, Computer Hardware & Architecture, Networking & Cybersecurity, and Artificial Intelligence & Machine Learning. </p>
+    </section>
+
+    <section id="motivation">
+        <h2>Why This Program?</h2>
+        <p>Beyond my passion for computers and how they function, the following reasons influenced my decision to pursue Computer Engineering: </p>
+        <p> The tech industry is experiencing rapid growth, with computer engineers in high demand globally. This field creates opportunities for careers in software development, cybersecurity, artificial intelligence, robotics, and networking.</p>
+        <p> Computer engineers drive innovation in areas such as AI, IoT, blockchain, and automation, shaping the future of technology, healthcare, finance, and communication.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: senamgbedema2@gmail.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Senam Gbedema. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
